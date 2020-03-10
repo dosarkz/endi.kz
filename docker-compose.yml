@@ -1,0 +1,76 @@
+version: '3.5'
+services:
+  #PHP Service
+  app:
+    build:
+      context: .
+      dockerfile: ./docker/php/Dockerfile
+    image: digitalocean.com/php
+    container_name: endi_app
+    restart: unless-stopped
+    tty: true
+    environment:
+      ENV: dev
+    volumes:
+      - .:/var/www
+      - ./docker/php/php-fpm.d:/usr/local/etc/php-fpm.d
+      - ./docker/php/conf.d/local.ini:/usr/local/etc/php/conf.d/local.ini
+    networks:
+      - app-network
+    depends_on:
+      - db
+    links:
+      - db
+
+  adminer:
+    image: adminer
+    container_name: endi_adminer
+    restart: always
+    ports:
+      - 8462:8080
+    networks:
+      - app-network
+
+  #Nginx Service
+  webserver:
+    image: nginx:alpine
+    container_name: endi_webserver
+    restart: unless-stopped
+    tty: true
+    ports:
+      - "5555:80"
+    volumes:
+      - .:/var/www
+      - ./docker/nginx/conf.d/:/etc/nginx/conf.d/
+    networks:
+      - app-network
+    depends_on:
+      - app
+    links:
+      - app
+
+  #MySQL Service
+  db:
+    image: mysql:latest
+    container_name: endi_db
+    restart: unless-stopped
+    tty: true
+    command: ['--character-set-server=utf8mb4', '--collation-server=utf8mb4_unicode_ci','--default-authentication-plugin=mysql_native_password']
+    ports:
+      - "2644:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: "${DB_ROOT_PASSWORD}"
+      MYSQL_DATABASE: "${DB_DATABASE}"
+      MYSQL_USER: "${DB_USERNAME}"
+      MYSQL_PASSWORD: "${DB_PASSWORD}"
+      SERVICE_TAGS: dev
+      SERVICE_NAME: mysql
+    volumes:
+      - ./docker/mysql/mysql-files:/var/lib/mysql-files
+    networks:
+      - app-network
+
+#Docker Networks
+networks:
+  app-network:
+    driver: bridge
