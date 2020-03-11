@@ -1,29 +1,75 @@
 .navbar
+    border-bottom: 1px solid rgba(133, 148, 171, 0.5)
     &-flex
         display: flex
-        height: 8rem
+        height: 7rem
     &-logo
         display: flex
         flex-direction: column
         color: $black
         text-align: center
-
         span
-            font-size: 17px
+            font-size: 12px
             margin-top: 10px
             text-transform: uppercase
     &-contacts
         display: flex
         flex-direction: column
+        a
+            font-size: 12px
+            text-align: right
     &-menu
         display: flex
+
+
 ul.menu
+    text-transform: uppercase
     .nav-item
         .nav-link
-            font-size: 18px
-            line-height: 18px
+            font-size: 14px
+            line-height: 14px
             color: #2E2E2E
+            &:hover
+                color: #3482DE
 .main-slider
     display: flex
     align-content: center
+    align-items: center
     justify-content: center
+    padding-top: 50px
+    margin-bottom: 100px
+    .slider
+        &__left_block
+            width: 50%
+            h1
+                font-weight: bold
+                font-size: 50px
+                line-height: 70px
+                margin-bottom: 30px
+
+        &__right_block
+            width: 50%
+            text-align: center
+.btn
+    border-radius: 0
+    &-primary
+        background-color: #3482DE
+        box-shadow: 0 5px 15px rgba(52, 130, 222, 0.3)
+        width: 310px
+        padding: 15px 0 15px 0
+
+section.services
+    display: flex
+    align-content: center
+    align-items: center
+    justify-content: center
+    .service
+        &-title
+            width: 50%
+        &-list
+            width: 50%
+            display: flex
+            .service-item
+                background: #FFFFFF
+                width: 410px
+                box-shadow: 0px 7px 40px rgba(0, 0, 0, 0.1)
