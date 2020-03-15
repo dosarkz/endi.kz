@@ -1,5 +1,4 @@
 .navbar
-    border-bottom: 1px solid rgba(133, 148, 171, 0.5)
     &-flex
         display: flex
         height: 7rem
@@ -42,9 +41,7 @@ ul.menu
         &__left_block
             width: 50%
             h1
-                font-weight: bold
-                font-size: 50px
-                line-height: 70px
+                font-size: 30px
                 margin-bottom: 30px
 
         &__right_block
@@ -65,11 +62,36 @@ section.services
     justify-content: center
     .service
         &-title
-            width: 50%
+            width: 30%
+            h2
+                font-size: 40px
+                font-weight: bold
+            span
+                font-size: 25px
+            p
+                color: #8594AB
+                font-size: 14px
+                font-weight: lighter
         &-list
-            width: 50%
-            display: flex
+            width: 70%
+            display: grid
+            grid-template-columns: 410px 410px
+            grid-gap: 10%
+            grid-template-rows: auto
             .service-item
                 background: #FFFFFF
+                padding: 40px
                 width: 410px
-                box-shadow: 0px 7px 40px rgba(0, 0, 0, 0.1)
+                min-height: 150px
+                box-shadow: 0 7px 40px rgba(0, 0, 0, 0.1)
+                &:hover
+                    background: linear-gradient(119.97deg, #4897EB 3.65%, #3482DE 101.27%)
+                    color: white
+                    .service_icon
+                        fill: white
+                .service-icon-header
+                    margin-bottom: 20px
+
+@include media-breakpoint-only(xl)
+    .container
+        min-width: 1600px

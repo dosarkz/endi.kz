@@ -19,16 +19,12 @@
             <div class="container navbar-flex">
                 <a class="navbar-logo" href="{{ url('/') }}">
                     <img src="/img/endi-logo.svg" alt="Endi Studio logo">
-                    <span>{{ __('Web Studio') }}</span>
                 </a>
 
                 <div class="navbar-menu">
                     <ul class="navbar-nav menu">
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('login') }}">{{ __('Main') }}</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ route('login') }}">{{ __('Services') }}</a>
+                            <a class="nav-link" href="{{ route('login') }}">{{ __('Projects') }}</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('login') }}">{{ __('About') }}</a>
@@ -36,22 +32,11 @@
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('login') }}">{{ __('Advantages') }}</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ route('login') }}">{{ __('Projects') }}</a>
-                        </li>
+
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('login') }}">{{ __('Contacts') }}</a>
                         </li>
                     </ul>
-                </div>
-
-                <div class="navbar-contacts">
-                    <span>+7 705 654 35 64</span>
-                    <a href="#">заказать звонок</a>
-                </div>
-
-                <div class="navbar-language">
-                    <a href="">рус</a>
                 </div>
             </div>
         </nav>
