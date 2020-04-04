@@ -8,7 +8,7 @@
                 <a class="btn btn-primary" href="">Заказать сайт</a>
             </div>
             <div class="slider__right_block">
-                <img src="/img/rocket.svg" alt="Rocket" width="450px">
+                <img src="/img/abstraction.jpg" alt="Rocket" width="450px">
             </div>
         </section>
 

@@ -11,3 +11,27 @@
     font-stretch: normal;
     unicode-range: U+0020-2044;
 }
+
+@font-face {
+    font-family: 'Ledger';
+    src: url('../fonts/ledger/Ledger-Regular.woff2') format('woff2'),
+    url('../fonts/ledger/Ledger-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Caviar';
+    src: url('../fonts/caviar/CaviarDreams.woff2') format('woff2'),
+    url('../fonts/caviar/CaviarDreams.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Judo';
+    src: url('../fonts/judo/judo-regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
