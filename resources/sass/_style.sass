@@ -36,7 +36,7 @@ ul.menu
     align-items: center
     justify-content: center
     padding-top: 50px
-    margin-bottom: 100px
+    margin-bottom: 200px
     .slider
         &__left_block
             width: 50%
@@ -50,19 +50,19 @@ ul.menu
 .btn
     border-radius: 0
     &-primary
-        background-color: #3482DE
-        box-shadow: 0 5px 15px rgba(52, 130, 222, 0.3)
+        background-color: #7F7F7F
         width: 310px
         padding: 15px 0 15px 0
+        &:hover
+            background-color: #9DD400
 
 section.services
-    display: flex
-    align-content: center
-    align-items: center
-    justify-content: center
+    display: grid
+    grid-template-columns: 30% 70%
+    grid-auto-rows: auto
+    margin-bottom: 200px
     .service
         &-title
-            width: 30%
             h2
                 font-size: 40px
                 font-weight: bold
@@ -70,29 +70,68 @@ section.services
                 font-size: 25px
             p
                 color: #8594AB
-                font-size: 14px
+                font-size: 18px
                 font-weight: lighter
                 width: 70%
                 padding: 10px
         &-list
-            width: 70%
             display: grid
-            grid-template-columns: 410px 410px
+            grid-template-columns: 50% 50%
             grid-gap: 10%
             grid-template-rows: auto
+            position: relative
+            height: 700px
+            &__bg_left
+                position: absolute
+                left: -60px
+                top: -60px
+                z-index: 0
+            &__bg_bottom
+                position: absolute
+                right: 0
+                bottom: -150px
+                z-index: 0
             .service-item
+                z-index: 1
                 background: #FFFFFF
                 padding: 40px
-                width: 410px
-                min-height: 150px
                 box-shadow: 0 7px 40px rgba(0, 0, 0, 0.1)
                 &:hover
-                    background: linear-gradient(119.97deg, #4897EB 3.65%, #3482DE 101.27%)
+                    background: linear-gradient(90deg, rgba(157,212,0,1) 0%, rgba(157,212,0,1) 35%, rgba(157,212,0,1) 100%)
+                    text-decoration: none
                     color: white
                     .service_icon
                         fill: white
+                    p, h4
+                        color: white
                 .service-icon-header
                     margin-bottom: 20px
+                p
+                    color: #8594AB
+                h4
+                    color: #2E2E2E
+                .service_icon
+                    fill: #9DD400
+.about
+    margin-bottom: 150px
+    &__content
+        display: flex
+    &__text
+        font-size: 16px
+        color: #2E2E2E
+        padding: 20px
+        width: 40%
+    &__visual
+        width: 60%
+        text-align: center
+
+.projects
+    &__list
+        display: grid
+        grid-template-columns: 50% 50%
+        grid-gap: 10%
+        grid-template-rows: auto
+
 
 @include media-breakpoint-only(xl)
     .container
