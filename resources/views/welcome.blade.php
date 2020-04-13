@@ -98,22 +98,76 @@
                 <h1>Наши проекты</h1>
             </div>
             <div class="projects__list">
-                <div class="project__item">
-                    <img class="project__item-img" src="/img/project.png" alt="">
-                    <h4 class="project__item-title">Название проекта</h4>
-                    <span class="project__item-category">Разработка сайта</span>
+                <div class="projects__list-item">
+                    <img class="projects__list-item-img" width="50%" src="/img/project.png" alt="">
+                    <h4 class="projects__list-item-title">Название проекта</h4>
+                    <span class="projects__list-item-category">Разработка сайта</span>
                 </div>
-                <div class="project__item">
-                    <img class="project__item-img" src="/img/project.png" alt="">
-                    <h4 class="project__item-title">Название проекта</h4>
-                    <span class="project__item-category">Разработка сайта</span>
+                <div class="projects__list-item">
+                    <img class="projects__list-item-img"  width="50%" src="/img/project.png" alt="">
+                    <h4 class="projects__list-item-title">Название проекта</h4>
+                    <span class="projects__list-item-category">Разработка сайта</span>
                 </div>
-                <div class="project__item">
-                    <img class="project__item-img" src="/img/project.png" alt="">
-                    <h4 class="project__item-title">Название проекта</h4>
-                    <span class="project__item-category">Разработка сайта</span>
+                <div class="projects__list-item">
+                    <img class="projects__list-item-img"  width="50%" src="/img/project.png" alt="">
+                    <h4 class="projects__list-item-title">Название проекта</h4>
+                    <span class="projects__list-item-category">Разработка сайта</span>
+                </div>
+            </div>
+        </section>
+        <section class="clients">
+            <h1>Клиенты</h1>
+            <div class="clients__list">
+                <div class="clients__list-item">
+                    <img src="/img/clients/bestdoctor.png" alt="Bestdoctor.kz">
+                </div>
+                <div class="clients__list-item">
+                    <img src="/img/clients/unipark.png" alt="Bestdoctor.kz">
+                </div>
+                <div class="clients__list-item">
+                    <img src="/img/clients/alltours.png" alt="Bestdoctor.kz">
+                </div>
+                <div class="clients__list-item">
+                    <img src="/img/clients/keruencity.png" alt="Bestdoctor.kz">
+                </div>
+                <div class="clients__list-item">
+                    <img src="/img/clients/emerald-tower.png" alt="Bestdoctor.kz">
                 </div>
             </div>
         </section>
     </div>
+    <footer class="footer">
+        <div class="container footer-flex">
+            <div class="endi-brand">
+                <img src="/img/endi-logo.svg" alt="Endi Studio logo">
+            </div>
+            <div class="footer-menu">
+                <ul>
+                    <li>
+                        <a href="">Главная</a>
+                    </li>
+                    <li>
+                        <a href="">Услуги</a>
+                    </li>
+                    <li>
+                        <a href="">О нас</a>
+                    </li>
+                    <li>
+                        <a href="">Преимущества</a>
+                    </li>
+                    <li>
+                        <a href="">Проекты</a>
+                    </li>
+                    <li>
+                        <a href="">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <p> г. Нур-Султан, ул. Брусиловского, 5</p>
+                <p>info@endi.kz</p>
+                <p>+7 705 654 35 64</p>
+            </div>
+        </div>
+    </footer>
 @endsection
