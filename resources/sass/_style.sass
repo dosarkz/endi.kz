@@ -29,7 +29,12 @@ ul.menu
             line-height: 14px
             color: #2E2E2E
             &:hover
-                color: #3482DE
+                color: #9DD400
+        .active
+            color: #9DD400
+            border-bottom: 2px #000 solid
+            padding-bottom: 4px
+            font-weight: bold
 .main-slider
     display: flex
     align-content: center
@@ -48,11 +53,11 @@ ul.menu
             width: 50%
             text-align: center
 .btn
-    border-radius: 0
-    &-primary
+    &-endi
         background-color: #7F7F7F
         width: 310px
         padding: 15px 0 15px 0
+        color: white
         &:hover
             background-color: #9DD400
 
@@ -147,7 +152,7 @@ section.services
             display: block
             padding: 10px
 .footer
-    background-color: #7F7F7F
+    background-color: #f5f5ea
     display: flex
     flex-flow: wrap
     padding: 40px
@@ -160,5 +165,6 @@ section.services
 
 @include media-breakpoint-only(xl)
     .container
-        min-width: 1600px
+        min-width: 1200px
+
 

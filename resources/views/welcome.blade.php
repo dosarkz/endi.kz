@@ -5,7 +5,7 @@
         <section class="main-slider">
             <div class="slider__left_block">
                 <h1>Мы создаем целостные цифровые продукты, ориентированные на пользователя и интерактивный опыт, которые помогают брендам выделиться.</h1>
-                <a class="btn btn-primary" href="">Заказать сайт</a>
+                <a class="btn btn-endi" href="">Заказать сайт</a>
             </div>
             <div class="slider__right_block">
                 <img src="/img/abstraction.jpg" alt="Rocket" width="450px">

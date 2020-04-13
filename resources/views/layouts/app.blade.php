@@ -41,17 +41,21 @@
                 <div class="navbar-menu">
                     <ul class="navbar-nav menu">
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('login') }}">{{ __('Projects') }}</a>
+                            <a class="nav-link {{active_uri(route('projects', [], false))}}"
+                               href="{{ route('projects') }}">{{ __('Projects') }}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('login') }}">{{ __('About') }}</a>
+                            <a class="nav-link {{active_uri(route('about', [], false))}}"
+                               href="{{ route('about') }}">{{ __('About') }}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('login') }}">{{ __('Advantages') }}</a>
+                            <a class="nav-link {{active_uri(route('advantages', [], false))}}"
+                               href="{{ route('advantages') }}">{{ __('Advantages') }}</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('login') }}">{{ __('Contacts') }}</a>
+                            <a class="nav-link {{active_uri(route('contacts', [], false))}}"
+                               href="{{ route('contacts') }}">{{ __('Contacts') }}</a>
                         </li>
                     </ul>
                 </div>
@@ -60,6 +64,40 @@
         <main class="content">
             @yield('content')
         </main>
+        <footer class="footer">
+            <div class="container footer-flex">
+                <div class="endi-brand">
+                    <img src="/img/endi-logo.svg" alt="Endi Studio logo">
+                </div>
+                <div class="footer-menu">
+                    <ul>
+                        <li>
+                            <a href="">Главная</a>
+                        </li>
+                        <li>
+                            <a href="">Услуги</a>
+                        </li>
+                        <li>
+                            <a href="">О нас</a>
+                        </li>
+                        <li>
+                            <a href="">Преимущества</a>
+                        </li>
+                        <li>
+                            <a href="">Проекты</a>
+                        </li>
+                        <li>
+                            <a href="">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <p> г. Нур-Султан, ул. Брусиловского, 5</p>
+                    <p>info@endi.kz</p>
+                    <p>+7 705 654 35 64</p>
+                </div>
+            </div>
+        </footer>
     </div>
 </body>
 </html>
