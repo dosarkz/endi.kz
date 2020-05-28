@@ -41,6 +41,10 @@
                 <div class="navbar-menu">
                     <ul class="navbar-nav menu">
                         <li class="nav-item">
+                            <a class="nav-link {{active_uri(route('main', [], false))}}"
+                               href="{{ route('main') }}">{{ __('Main') }}</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link {{active_uri(route('projects', [], false))}}"
                                href="{{ route('projects') }}">{{ __('Projects') }}</a>
                         </li>
@@ -66,9 +70,20 @@
         </main>
         <footer class="footer">
             <div class="container footer-flex">
-                <div class="endi-brand">
-                    <img src="/img/endi-logo.svg" alt="Endi Studio logo">
+
+                <div class="any-questions">
+                    <h5>Остались вопросы?</h5>
+                    <p>Напишите нам, и мы свяжемся с Вами</p>
+                    <div class="form">
+                        <form action="/question">
+                            <input type="text" name="name" placeholder="Ваше имя">
+                            <input type="text" name="phone" placeholder="Телефон">
+                            <textarea  name="phone" placeholder="Сообщение"></textarea>
+                            <button>Отправить</button>
+                        </form>
+                    </div>
                 </div>
+
                 <div class="footer-menu">
                     <ul>
                         <li>
@@ -95,6 +110,12 @@
                     <p> г. Нур-Султан, ул. Брусиловского, 5</p>
                     <p>info@endi.kz</p>
                     <p>+7 705 654 35 64</p>
+                </div>
+
+                <div class="endi-brand">
+                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" >
+                        <path  id="endi-logo" fill-rule="evenodd" clip-rule="evenodd" d="M0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25ZM17.7851 33.9893H23.6277V30.5318L26.8299 33.9893H33.2342L17.7851 15.1361V33.9893ZM27.7287 15.1361H33.2342V22.7687L27.7287 15.1361Z" fill="white"/>
+                    </svg>
                 </div>
             </div>
         </footer>

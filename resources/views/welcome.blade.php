@@ -8,10 +8,9 @@
                 <a class="btn btn-endi" href="">Заказать сайт</a>
             </div>
             <div class="slider__right_block">
-                <img src="/img/abstraction.jpg" alt="Rocket" width="450px">
+                <img src="/img/have-a-sit.png" alt="" width="450px">
             </div>
         </section>
-
 
         <section class="services">
             <div class="service-title">
@@ -136,38 +135,5 @@
             </div>
         </section>
     </div>
-    <footer class="footer">
-        <div class="container footer-flex">
-            <div class="endi-brand">
-                <img src="/img/endi-logo.svg" alt="Endi Studio logo">
-            </div>
-            <div class="footer-menu">
-                <ul>
-                    <li>
-                        <a href="">Главная</a>
-                    </li>
-                    <li>
-                        <a href="">Услуги</a>
-                    </li>
-                    <li>
-                        <a href="">О нас</a>
-                    </li>
-                    <li>
-                        <a href="">Преимущества</a>
-                    </li>
-                    <li>
-                        <a href="">Проекты</a>
-                    </li>
-                    <li>
-                        <a href="">Контакты</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="footer-contact">
-                <p> г. Нур-Султан, ул. Брусиловского, 5</p>
-                <p>info@endi.kz</p>
-                <p>+7 705 654 35 64</p>
-            </div>
-        </div>
-    </footer>
+
 @endsection
