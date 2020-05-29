@@ -1,8 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container">
-        <h1>Projects</h1>
+        <h1>О нас</h1>
         <p>list</p>
-    </div>
 @endsection

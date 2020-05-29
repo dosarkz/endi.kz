@@ -1,14 +1,34 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container">
+    <div class="container-fluid">
         <section class="main-slider">
             <div class="slider__left_block">
-                <h1>Мы создаем целостные цифровые продукты, ориентированные на пользователя и интерактивный опыт, которые помогают брендам выделиться.</h1>
-                <a class="btn btn-endi" href="">Заказать сайт</a>
+                <h1>Мы создаем целостные цифровые продукты, ориентированные на пользователя и интерактивный опыт, которые помогают компаниям выделиться.</h1>
             </div>
-            <div class="slider__right_block">
-                <img src="/img/have-a-sit.png" alt="" width="450px">
+
+        </section>
+
+        <section class="projects">
+            <div class="projects__header">
+                <h1>Наши проекты</h1>
+            </div>
+            <div class="projects__list">
+                <div class="projects__list-item">
+                    <img class="projects__list-item-img" width="50%" src="/img/project.png" alt="">
+                    <h4 class="projects__list-item-title">Название проекта</h4>
+                    <span class="projects__list-item-category">Разработка сайта</span>
+                </div>
+                <div class="projects__list-item">
+                    <img class="projects__list-item-img"  width="50%" src="/img/project.png" alt="">
+                    <h4 class="projects__list-item-title">Название проекта</h4>
+                    <span class="projects__list-item-category">Разработка сайта</span>
+                </div>
+                <div class="projects__list-item">
+                    <img class="projects__list-item-img"  width="50%" src="/img/project.png" alt="">
+                    <h4 class="projects__list-item-title">Название проекта</h4>
+                    <span class="projects__list-item-category">Разработка сайта</span>
+                </div>
             </div>
         </section>
 
@@ -92,28 +112,7 @@
                 </div>
             </div>
         </section>
-        <section class="projects">
-            <div class="projects__header">
-                <h1>Наши проекты</h1>
-            </div>
-            <div class="projects__list">
-                <div class="projects__list-item">
-                    <img class="projects__list-item-img" width="50%" src="/img/project.png" alt="">
-                    <h4 class="projects__list-item-title">Название проекта</h4>
-                    <span class="projects__list-item-category">Разработка сайта</span>
-                </div>
-                <div class="projects__list-item">
-                    <img class="projects__list-item-img"  width="50%" src="/img/project.png" alt="">
-                    <h4 class="projects__list-item-title">Название проекта</h4>
-                    <span class="projects__list-item-category">Разработка сайта</span>
-                </div>
-                <div class="projects__list-item">
-                    <img class="projects__list-item-img"  width="50%" src="/img/project.png" alt="">
-                    <h4 class="projects__list-item-title">Название проекта</h4>
-                    <span class="projects__list-item-category">Разработка сайта</span>
-                </div>
-            </div>
-        </section>
+
         <section class="clients">
             <h1>Клиенты</h1>
             <div class="clients__list">

@@ -4,6 +4,8 @@
 namespace App\Http\Controllers;
 
 
+use App\Http\Requests\CallbackRequest;
+
 class SiteController extends Controller
 {
     public function projects()
@@ -24,5 +26,10 @@ class SiteController extends Controller
     public function advantages()
     {
         return view('site.advantages');
+    }
+
+    public function callback(CallbackRequest $request)
+    {
+        dd(1);
     }
 }

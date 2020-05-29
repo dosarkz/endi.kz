@@ -19,13 +19,14 @@
             text-align: right
     &-menu
         display: flex
+        .nav-item
+            padding: 0 0.6rem
 
 
 ul.menu
-    text-transform: uppercase
     .nav-item
         .nav-link
-            font-size: 14px
+            font-size: 18px
             line-height: 14px
             color: #2E2E2E
             &:hover
@@ -151,21 +152,23 @@ section.services
             display: block
             padding: 10px
 .footer
-    background-color: #212129
     display: flex
     flex-flow: wrap
     padding: 40px
+    flex-shrink: 0
     &-flex
         display: flex
         flex-direction: row
         justify-content: space-between
         align-items: center
         .any-questions
-            color: white
             h5
                 font-size: 40px
+            .callback-form
+                display: flex
+                flex-direction: column
     &-contact
-        color: white
+        color: black
     &-menu
         display: flex
         flex-direction: row
@@ -174,12 +177,22 @@ section.services
                 a
                     color: #8594AB
 
+.content
+    flex: 1 0 auto
 
 #endi-logo
+    fill: black
     opacity: 0.5
     &:hover
         opacity: 1
         cursor: pointer
+html, body
+    height: 100%
+
+#app
+    display: flex
+    flex-direction: column
+    min-height: 100%
 
 @include media-breakpoint-only(xl)
     .container
