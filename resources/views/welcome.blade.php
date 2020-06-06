@@ -4,31 +4,62 @@
     <div class="container-fluid">
         <section class="main-slider">
             <div class="slider__left_block">
-                <h1>Мы создаем целостные цифровые продукты, ориентированные на пользователя и интерактивный опыт, которые помогают компаниям выделиться.</h1>
+                <h1>Мы создаем веб-сайты, ориентированные на пользователя и интерактивный опыт, которые помогают компаниям выделиться.</h1>
             </div>
 
         </section>
 
         <section class="projects">
             <div class="projects__header">
-                <h1>Наши проекты</h1>
+                <h1>Наши работы</h1>
             </div>
             <div class="projects__list">
-                <div class="projects__list-item">
-                    <img class="projects__list-item-img" width="50%" src="/img/project.png" alt="">
-                    <h4 class="projects__list-item-title">Название проекта</h4>
-                    <span class="projects__list-item-category">Разработка сайта</span>
+
+                <div class="project-item">
+                    <div class="project-img">
+                        <img class="project-img" src="/img/projects/vitiligoo.png" alt="Оборудование для лечения кожных хронических заболевании">
+                    </div>
+                    <div class="project-info">
+                        <h4 class="title">Лендинг по продаже оборудования для лечения хронических кожных заболеваний</h4>
+                        <a class="url" href="https://vitiligoo.kz">vitiligoo.kz</a>
+                        <div class="form-group d-flex justify-content-around">
+                            <a href="" class="tag">Landing page</a>
+                            <a href="" class="tag">Yandex direct</a>
+                            <a href="" class="tag">Google Ad</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="projects__list-item">
-                    <img class="projects__list-item-img"  width="50%" src="/img/project.png" alt="">
-                    <h4 class="projects__list-item-title">Название проекта</h4>
-                    <span class="projects__list-item-category">Разработка сайта</span>
+
+                <div class="project-item">
+                    <div class="project-img">
+                        <img class="project-img" src="/img/projects/bestdoctor.jpg" alt="Сервис по поиску врачей в Казахстане">
+                    </div>
+                    <div class="project-info">
+                        <h4 class="title">Портал по поиску врачей в Казахстане</h4>
+                        <a class="url" href="https://bestdoctor.kz">bestdoctor.kz</a>
+                        <div class="form-group d-flex justify-content-around">
+                            <a href="" class="tag">Site</a>
+                            <a href="" class="tag">CMS</a>
+                            <a href="" class="tag">SEO</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="projects__list-item">
-                    <img class="projects__list-item-img"  width="50%" src="/img/project.png" alt="">
-                    <h4 class="projects__list-item-title">Название проекта</h4>
-                    <span class="projects__list-item-category">Разработка сайта</span>
+
+                <div class="project-item">
+                    <div class="project-img">
+                        <img class="project-img" src="/img/projects/alltours.jpg" alt="Мобильное туристическое приложение AllTours.kz">
+                    </div>
+                    <div class="project-info">
+                        <h4 class="title">Мобильное туристическое приложение</h4>
+                        <a class="url" href="https://alltours.kz">alltours.kz</a>
+                        <div class="form-group d-flex justify-content-around">
+                            <a href="" class="tag">API</a>
+                            <a href="" class="tag">CSM</a>
+                            <a href="" class="tag">SEO</a>
+                        </div>
+                    </div>
                 </div>
+
             </div>
         </section>
 
@@ -113,26 +144,7 @@
             </div>
         </section>
 
-        <section class="clients">
-            <h1>Клиенты</h1>
-            <div class="clients__list">
-                <div class="clients__list-item">
-                    <img src="/img/clients/bestdoctor.png" alt="Bestdoctor.kz">
-                </div>
-                <div class="clients__list-item">
-                    <img src="/img/clients/unipark.png" alt="Bestdoctor.kz">
-                </div>
-                <div class="clients__list-item">
-                    <img src="/img/clients/alltours.png" alt="Bestdoctor.kz">
-                </div>
-                <div class="clients__list-item">
-                    <img src="/img/clients/keruencity.png" alt="Bestdoctor.kz">
-                </div>
-                <div class="clients__list-item">
-                    <img src="/img/clients/emerald-tower.png" alt="Bestdoctor.kz">
-                </div>
-            </div>
-        </section>
+
     </div>
 
 @endsection

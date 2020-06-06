@@ -132,15 +132,42 @@ section.services
 
 .projects
     display: grid
-    flex-wrap: wrap
     margin-bottom: 140px
+    &__header
+        margin-bottom: 2rem
+        h1
+            font-size: 40px
     &__list
         display: grid
-        grid-template-columns: 1fr 1fr
+        grid-template-columns: 1fr 1fr 1fr
         grid-gap: 40px
         grid-template-rows: auto
-        &-item
-            display: block
+        align-items: center
+        .project-item
+            display: flex
+            flex-wrap: wrap
+            justify-content: space-around
+            .project-img
+                width: 300px
+
+            .project-info
+                padding: 3rem
+                text-align: center
+                display: flex
+                flex-direction: column
+                .title
+                    color: #242424
+                .url
+                    font-size: 2rem
+                .tag
+                    margin: 2rem 0
+                    background: rgba(0, 0, 0, 0.2)
+                    border-radius: 1rem
+                    color: dimgrey
+                    padding: 0.2rem 0.4rem
+                    &:hover
+                        background: #9DD400
+                        text-decoration: none
 .clients
     margin-bottom: 50px
     .clients__list
