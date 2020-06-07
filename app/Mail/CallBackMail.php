@@ -30,6 +30,8 @@ class CallBackMail extends Mailable
      */
     public function build()
     {
-        return $this->markdown('emails.orders.new');
+        return $this
+            ->subject('Новая заявка с сайта endi.kz')
+            ->markdown('emails.orders.new');
     }
 }
