@@ -63,6 +63,12 @@
         </div>
     </nav>
     <main class="content container-fluid">
+        @if(Session::has('success'))
+            <div class="alert alert-success"><span class="glyphicon glyphicon-ok"></span><em> {!! session('success') !!}</em></div>
+        @endif
+        @if(Session::has('error'))
+            <div class="alert alert-warning"><span class="glyphicon glyphicon-error"></span><em> {!! session('error') !!}</em></div>
+        @endif
         @yield('content')
     </main>
     <footer class="footer">

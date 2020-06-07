@@ -31,5 +31,7 @@ class SiteController extends Controller
         Mail::to([
             'address' => 'ashenov.e@gmail.com'
         ])->send(new CallBackMail($request->all()));
+
+        return redirect()->back()->with('success', 'Заявка успешно отправлена. Мы свяжемся с вами в ближайшее время.');
     }
 }
