@@ -4,7 +4,7 @@
     <div class="container-fluid">
         <section class="main-slider">
             <div class="slider__left_block">
-                <h1>Мы создаем веб-сайты, ориентированные на пользователя и интерактивный опыт, которые помогают компаниям выделиться.</h1>
+                <h1>Мы создаем веб-сайты, ориентированные на клиента и его потребительский опыт, которые помогают компаниям по продвижению бизнеса.</h1>
             </div>
 
         </section>
@@ -22,7 +22,7 @@
                     <div class="project-info">
                         <h4 class="title">Лендинг по продаже оборудования для лечения хронических кожных заболеваний</h4>
                         <a class="url" href="https://vitiligoo.kz">vitiligoo.kz</a>
-                        <div class="form-group d-flex justify-content-around">
+                        <div class="form-group tags">
                             <a href="" class="tag">Landing page</a>
                             <a href="" class="tag">Yandex direct</a>
                             <a href="" class="tag">Google Ad</a>
@@ -35,9 +35,9 @@
                         <img class="project-img" src="/img/projects/bestdoctor.jpg" alt="Сервис по поиску врачей в Казахстане">
                     </div>
                     <div class="project-info">
-                        <h4 class="title">Портал по поиску врачей в Казахстане</h4>
+                        <h4 class="title">Портал поиска лучших врачей в Казахстане</h4>
                         <a class="url" href="https://bestdoctor.kz">bestdoctor.kz</a>
-                        <div class="form-group d-flex justify-content-around">
+                        <div class="form-group tags">
                             <a href="" class="tag">Site</a>
                             <a href="" class="tag">CMS</a>
                             <a href="" class="tag">SEO</a>
@@ -51,10 +51,10 @@
                     </div>
                     <div class="project-info">
                         <h4 class="title">Мобильное туристическое приложение</h4>
-                        <a class="url" href="https://alltours.kz">alltours.kz</a>
-                        <div class="form-group d-flex justify-content-around">
+                        <a target="" class="url" href="https://play.google.com/store/apps/details?id=com.adabadan.alltours">alltours.kz</a>
+                        <div class="form-group tags">
                             <a href="" class="tag">API</a>
-                            <a href="" class="tag">CSM</a>
+                            <a href="" class="tag">CMS</a>
                             <a href="" class="tag">SEO</a>
                         </div>
                     </div>
@@ -133,13 +133,13 @@
             <h1 class="about__h1">О компании</h1>
             <div class="about__content">
                 <div class="about__text">
-                    <p>Мы - Digital Агентство Endi выполняет полный спектр услуг по созданию адаптивных сайтов, автоматизации бизнес - процессов, решению сложных и интересных задач с их последующим продвижением в поисковых системах.</p>
-                    <p>Мы - технологичны. Профессионально работаем по Bootstrap на HTML5 и CSS3 с зарекомендовавшими себя коробочными CMS-системами и фреймворками.</p>
+                    <p>Мы - Digital Агентство "Endi" выполняет полный спектр услуг по созданию адаптивных сайтов, автоматизации бизнес - процессов, решению сложных и интересных задач с их последующим продвижением в поисковых системах.</p>
+                    <p>Мы - технологичны. Используем только самые современно-роботающие технологии разработки frontend'a и backend'a.</p>
                    <p> Прозрачная схема работы и техническая поддержка 24/7. Предоставляем постоянную поддержку сайтов и устранение ошибок, возникающих в процессе их работы.</p>
-                    <p>Отлично знаем свое дело и ценим наших клиентов. Всегда рады предложить что-то новое и действительно необходимое. В работе ценим аналитический подход, яркость идей и простоту решений.</p>
+                    <p>Отлично знаем свое дело и ценим наших клиентов! Всегда рады предложить что-то новенькое и действительно необходимое. В работе ценим аналитический подход, яркость идей и простоту решений.</p>
                 </div>
                 <div class="about__visual">
-                    <img width="700px" class="about__img" src="/img/endi-about.png" alt="Endi company personal">
+                    <img width="700px" class="about__img" src="/img/endi-about.svg" alt="Endi company personal">
                 </div>
             </div>
         </section>

@@ -40,8 +40,7 @@ ul.menu
     align-content: center
     align-items: center
     justify-content: center
-    padding-top: 50px
-    margin-bottom: 200px
+    margin: 5rem 0
     .slider
         &__left_block
             width: 50%
@@ -122,7 +121,7 @@ section.services
     &__content
         display: flex
     &__text
-        font-size: 16px
+        font-size: 19px
         color: #2E2E2E
         padding: 20px
         width: 40%
@@ -159,15 +158,21 @@ section.services
                     color: #242424
                 .url
                     font-size: 2rem
-                .tag
-                    margin: 2rem 0
-                    background: rgba(0, 0, 0, 0.2)
-                    border-radius: 1rem
-                    color: dimgrey
-                    padding: 0.2rem 0.4rem
-                    &:hover
-                        background: #9DD400
-                        text-decoration: none
+                .tags
+                    display: flex
+                    flex-wrap: wrap
+                    justify-content: center
+                    margin-top: 2rem
+
+                    .tag
+                        margin: 0.5rem 0.5rem
+                        background: rgba(0, 0, 0, 0.2)
+                        border-radius: 1rem
+                        color: dimgrey
+                        padding: 0.4rem 1rem
+                        &:hover
+                            background: #9DD400
+                            text-decoration: none
 .clients
     margin-bottom: 50px
     .clients__list
@@ -183,11 +188,12 @@ section.services
     flex-flow: wrap
     padding: 40px
     flex-shrink: 0
+    background: yellowgreen
     &-flex
         display: flex
         flex-direction: row
         justify-content: space-between
-        align-items: center
+        align-items: baseline
         .any-questions
             h5
                 font-size: 40px
@@ -200,9 +206,14 @@ section.services
         display: flex
         flex-direction: row
         ul
+            display: flex
+            list-style: none
+            margin: 0
+            padding: 0
             li
                 a
-                    color: #8594AB
+                    color: black
+                    font-size: 18px
 
 .content
     flex: 1 0 auto

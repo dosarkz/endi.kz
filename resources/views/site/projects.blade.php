@@ -1,6 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-        <h1>Projects</h1>
-        <p>list</p>
+    <div class="container-fluid">
+        <h1>Наши выполненные работы</h1>
+        <p>Упс, Страница находиться в разработке</p>
+    </div>
 @endsection

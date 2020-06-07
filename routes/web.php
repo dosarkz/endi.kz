@@ -23,5 +23,4 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('projects', 'SiteController@projects')->name('projects');
 Route::get('about', 'SiteController@about')->name('about');
 Route::get('contacts', 'SiteController@contacts')->name('contacts');
-Route::get('advantages', 'SiteController@advantages')->name('advantages');
 Route::post('callback', 'SiteController@callback')->name('callback');

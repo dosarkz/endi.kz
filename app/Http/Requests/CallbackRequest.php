@@ -27,7 +27,7 @@ class CallbackRequest extends FormRequest
         return [
             'name' => 'required|string',
             'phone' => 'required|string',
-            'message'=> 'string'
+            'message'=> 'required|string'
         ];
     }
 }

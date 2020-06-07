@@ -5,6 +5,9 @@ namespace App\Http\Controllers;
 
 
 use App\Http\Requests\CallbackRequest;
+use App\Mail\CallBackMail;
+use Illuminate\Support\Facades\Mail;
+use Prophecy\Call\Call;
 
 class SiteController extends Controller
 {
@@ -23,13 +26,10 @@ class SiteController extends Controller
         return view('site.contacts');
     }
 
-    public function advantages()
-    {
-        return view('site.advantages');
-    }
-
     public function callback(CallbackRequest $request)
     {
-        dd(1);
+        Mail::to([
+            'address' => 'ashenov.e@gmail.com'
+        ])->send(new CallBackMail($request->all()));
     }
 }
